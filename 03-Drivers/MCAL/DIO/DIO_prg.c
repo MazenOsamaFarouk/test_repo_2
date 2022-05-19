@@ -12,7 +12,7 @@
 
 #include "DIO_int.h"
 
-void DIO_vSetPinDir( u8 A_u8PortNo, u8 A_u8PinNo , u8 A_u8Dir )
+void MDIO_vSetPinDir( u8 A_u8PortNo, u8 A_u8PinNo , u8 A_u8Dir )
 {
 	if(A_u8Dir == DIO_OUTPUT)
 	{
@@ -50,9 +50,10 @@ void DIO_vSetPinDir( u8 A_u8PortNo, u8 A_u8PinNo , u8 A_u8Dir )
 			break;
 		}
 	}
+
 }
 
-void DIO_vSetPinVal(u8 A_u8PortNo, u8 A_u8PinNo ,u8 A_u8Val )
+void MDIO_vSetPinVal(u8 A_u8PortNo, u8 A_u8PinNo ,u8 A_u8Val )
 {
 	if(A_u8Val == DIO_HIGH)
 	{

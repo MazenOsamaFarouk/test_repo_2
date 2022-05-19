@@ -8,6 +8,13 @@
 #ifndef MCAL_DIO_DIO_INT_H_
 #define MCAL_DIO_DIO_INT_H_
 
+typedef enum
+{
+	OK=1,
+	NOK=0
+}Error_t;
+
+
 
 #define DIO_PORTA   0
 #define DIO_PORTB   1

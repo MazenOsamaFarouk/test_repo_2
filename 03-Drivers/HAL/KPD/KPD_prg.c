@@ -26,7 +26,7 @@ u8   KPD_u8GetPressedKey(void)
 	for(u8 col=0; col<4; col++)
 	{
 		/* activate current column */
-		DIO_vSetPinVal(KPD_PORT, col, DIO_LOW);
+		MDIO_vSetPinVal(KPD_PORT, col, DIO_LOW);
 		for(u8 row=0; row<4; row++)
 		{
 			if(DIO_u8GetPinVal(KPD_PORT, row+4) == 0) // a button in pressed
@@ -37,7 +37,7 @@ u8   KPD_u8GetPressedKey(void)
 			_delay_ms(10);
 		}
 		/* deactivate current column */
-		DIO_vSetPinVal(KPD_PORT, col, DIO_HIGH);
+		MDIO_vSetPinVal(KPD_PORT, col, DIO_HIGH);
 	}
 	return pressed_key;
 }

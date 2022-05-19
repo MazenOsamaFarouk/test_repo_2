@@ -23,7 +23,7 @@ void SSD_vInit(void)
 	DIO_vSetPortDir(SSD_PORT, 0xff);
 }
 
-void SSD_vDisplayNum(u8 A_u8Num)
+void SSD_vDisplayNum(u8 SSDId, u8 A_u8Num)
 {
 	/* input validation */
 	if(A_u8Num < 10)
