@@ -9,7 +9,8 @@
 #define HAL_LCD_LCD_INT_H_
 
 #define LCD_CLEAR		0b00000001
-
+#define LCD_LINE0		0
+#define LCD_LINE1		1
 
 #define LCD_CTRL_PORT   DIO_PORTA
 #define LCD_DATA_PORT	DIO_PORTD
